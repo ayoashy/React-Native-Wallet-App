@@ -28,6 +28,7 @@ const BalanceScreen: FunctionComponent<Props> = ({ route }) => {
       <StatusBar style='dark' />
       <AmountSection balance={route?.params.balance} />
       <BalanceCardSection {...route?.params} />
+      <ButtonSection/>
     </BalanceContainer>
   );
 };

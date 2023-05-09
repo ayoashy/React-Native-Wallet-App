@@ -57,7 +57,12 @@ const CardItem: FunctionComponent<CardProps> = (props) => {
   // configuring navigation
   const navigation = useNavigation<HomeProps['navigation']>();
 
-  const handlePress = () => {};
+  // move to balance page
+
+
+  const handlePress = () => {
+    navigation.navigate("Balance",{...props})
+  };
   return (
     <CardBackground source={card_bg}>
       <CardTouchable underlayColor={colors.secondary} onPress={handlePress}>

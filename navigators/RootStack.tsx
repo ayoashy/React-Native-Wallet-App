@@ -30,7 +30,7 @@ const RootStack: FunctionComponent = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator
-        initialRouteName='Balance'
+        initialRouteName='Welcome'
         screenOptions={{
           headerStyle: {
             backgroundColor: colors.grayLight,

@@ -19,13 +19,18 @@ import pot1 from './../assets/potraits/pot1.avif';
 import pot2 from './../assets/potraits/pot2.avif';
 import pot3 from './../assets/potraits/pot3.avif';
 
+// types
+import { RootStackParamList } from '../navigators/RootStack';
+import { StackScreenProps } from '@react-navigation/stack';
+export type Props = StackScreenProps<RootStackParamList, 'Home'>;
+
 const HomeContainer = styled(container)`
   background-color: ${colors.grayLight};
   width: 100%;
   flex: 1;
 `;
 
-const HomeScreen: FunctionComponent = () => {
+const HomeScreen: FunctionComponent<Props> = ({navigation}) => {
   const cardsData = [
     {
       id: 1,
